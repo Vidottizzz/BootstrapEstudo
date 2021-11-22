@@ -10,7 +10,7 @@
 </head>
 
 <body>
- <!-- --- Mudar o display pra block, colocamos o d antes, por exemplo class="d-block" --- -->
+<!-- --- Mudar o display pra block, colocamos o d antes, por exemplo class="d-block" --- -->
 
 <!-- <img  class="d-block" src="https://www.presentationmagazine.com/backgrounds/images/9/9/99244875/background_99244875_468_3.jpg" alt="">
 
@@ -32,8 +32,67 @@
     <!-- exemplo:  quer dizer que o float-start só é pra funcionar no tamanho lg , quando ficar menor, a propriedade sai -->
     <!-- --- tem muitas classes que permitem termos o fator responsivo, tratar um tipo de comportamento só pra um determinado tamanho de tela, ou seja, uma classe só tem efeito quando tiver em determinado tamanho de tela -->
     
-    <img class="float-lg-start" src="https://www.presentationmagazine.com/backgrounds/images/9/9/99244875/background_99244875_468_3.jpg" alt="">
-<p class="m-lg-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis assumenda ipsam suscipit officia accusamus molestiae tenetur laborum adipisci neque quasi autem rem quo fugiat, veritatis ipsa quidem excepturi nostrum voluptate.</p>
+    <!-- <img class="float-lg-start" src="https://www.presentationmagazine.com/backgrounds/images/9/9/99244875/background_99244875_468_3.jpg" alt="">
+<p class="m-lg-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis assumenda ipsam suscipit officia accusamus molestiae tenetur laborum adipisci neque quasi autem rem quo fugiat, veritatis ipsa quidem excepturi nostrum voluptate.</p> -->
+
+<!-- --- Brincar com flexbox --- -->
+<!-- uma div do lado da outra -->
+<!-- --- colocando o lg no meio do justify-content, ele ira só ter o espaçamento do space
+--- between se tiver lg pra cima -->
+
+<!-- <div class="container d-flex justify-content-lg-between align-items-center">
+    <div class="bg-primary">Linha 1</div>
+    <div class="bg-warning align-self-end">Linha 2</div>
+    <div class="bg-success">Linha 3</div>
+    <div>
+        <div class="bg-info">Linha 4</div>
+        <div class="bg-secondary">Linha 5</div>
+        <div class="bg-dark text-light">Linha 6</div>
+    </div>
+
+</div> -->
+
+ <!-- --- grid com bootstrap, o bootstrap optou em fazer o grid utilizando flex-box -->
+   <!-- --- Além dele se virar para definir e ajustar o tamanho da coluna, voce pode colocar
+   um numero após o col e ele ira ajustar, ele tem o sistema de 12 colunas, que quer
+dizer que, se uma coluna tiver no tamanho 8, a outra estará com tamanho 4,
+se for tamanho 6, as duas estarão com tamanhos iguais,
+se colocar um valor em uma coluna e na outra não, ela vai ocupar todo o resto, a não ser
+que ela tenha um valor estipulado, e pelo fato de ser feito no flex-box, pode-se usar as 
+funcionalidades do flex, por exemplo space between
+-->
+<div class="container">
+    <div class="row  justify-content-between">
+        <div class="bg-info col-md-6">Col</div>
+        <div class="bg-success col-md-3">Col</div>
+        <!-- <div class="bg-info col-md-6">Col</div>
+        <div class="bg-success col-md-3">Col</div> -->
+    </div>
+    <div class="row">
+        <div class="bg-info col-5">Col</div>
+        <div class="bg-success col-7">Col</div>
+    </div>   
+</div>
+<!-- deixando o font bold fw(font-weight) e fst (font-style),text start,center,end para alinhamento, maiusculo -->
+<p class="fw-bold fst-italic text-center text-uppercase" >Olá pessoas </p>
+<a href="" class="text-decoration-none">Oi OIiIO</a>
+<!-- tirou estilo da lista -->
+<ul class="list-unstyled">
+    <li>Item</li>
+    <li>Item</li>
+    <li>Item</li>
+</ul>
+<!-- Arredondar a borda com classe rounded, colocar responsividade na imagem com o fluid 
+ a classe img-thumbnail da uma estrutura de 'quadro' para a imagem, da uma estilizada na borda-->
+<img class="float-lg-start rounded img-fluid img-thumbnail" src="https://wallpaperheart.com/wp-content/uploads/2018/04/wallpaper.wiki-Cool-nature-backgrounds-hd-resolution-nature-background-image-hd.jpg" alt="">
+<!-- rounded circle para fazer o circulo -->
+<img class="float-lg-start rounded-circle img-fluid" src="https://wallpaperheart.com/wp-content/uploads/2018/04/wallpaper.wiki-Cool-nature-backgrounds-hd-resolution-nature-background-image-hd.jpg" alt="">
+<!-- tem que estar display block pois ja que esta no meio vai ocupar a linha toda -->
+<img class="rounded-circle d-block mx-auto" src="https://www.presentationmagazine.com/backgrounds/images/9/9/99244875/background_99244875_468_3.jpg" alt="">
+<!-- Outra maneira de deixar no meio é colocando a imagem em um container e colocando text-center, o text-center também pega em imagem, text-end vai deixar a imagem na direita, e text-start na esquerda -->
+<div class="text-center">
+    <img class="rounded-circle " src="https://www.presentationmagazine.com/backgrounds/images/9/9/99244875/background_99244875_468_3.jpg" alt="">
+</div>
 
 
 
