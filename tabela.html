@@ -347,7 +347,7 @@ teriamos varias paginas , pagination-lg -->
 </nav> -->
 
 <!-- CARROSEL -->
-
+<!-- 
 <div id="meuCarrossel" class="carousel slide" data-ride="carousel">
 
     <ul class="carousel-indicators">
@@ -373,32 +373,88 @@ teriamos varias paginas , pagination-lg -->
     <a href="#meuCarrossel" class="carousel-control-next" data-slide="next">
         <span class="carousel-control-next-icon"></span>
     </a>
+</div> -->
+ 
+<!-- MODAL é um elemento que vai aparecer em determinados casos e vai aparecer por cima
+de outros elementos -->
+
+<!-- <button data-toggle="modal" data-target="#meuModal">Meu modal</button>
+<div class="container">
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex ipsa assumenda quos dicta. Ipsa praesentium soluta cum reiciendis qui quaerat obcaecati suscipit. Nisi recusandae asperiores dolore, quis eum repellendus deserunt!
+        
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus illum numquam omnis. Sit distinctio obcaecati necessitatibus modi? Voluptas minus unde reprehenderit debitis, necessitatibus molestias magnam porro eos itaque beatae nisi?
+
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere, alias incidunt ea dicta exercitationem itaque vel consequatur atque nobis earum vero unde. Cum consequatur placeat vel illum! Quod, error repudiandae.
+
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, eum enim! Iste, harum. Sint explicabo odio obcaecati consectetur libero animi illum doloremque sunt quos. Rerum dolor et natus corrupti cumque.
+
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa velit molestias perspiciatis, obcaecati eius in, ipsam temporibus non accusantium, libero rem expedita dolorem laudantium dolor necessitatibus quae voluptatum reprehenderit corporis?
+    </p>
 </div>
+<div class="modal fade" id="meuModal">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1>Oferta Imperdivel</h1>
+            </div>
+            <div class="modal-body display-4">
+                Essse é o texto do meu modal
+            </div>       
+            <div class="modal-footer">
+                <button class="btn btn-primary">Comprar!</button>
+            </div> 
+        </div>       
+    </div>
+
+   
+</div> -->
+<!-- 
+tooltip - efeito bonitinho quando passa o mouse em cima do link
+mostra  -->
+
+<!-- <a href="https://instagram.com" data-toggle="tooltip" title="O site que controlará suas vidas!">Instagram</a> -->
+
+<!-- POPOVER - parecido com o tooltip -->
+
+<!-- <a href="#" data-trigger="hover" data-toggle="popover" title="O site que controlará suas vidas!" data-content="ali">Instagram</a> -->
 
 
-
-  <script>
-      //progress
-      let progressBar = document.querySelector(".progress-bar");
-      progressBar.innerHTML = "0%";
-      progressBar.style.width = "0%";
-
-      let value = 0;
-
-      setInterval(() => {
-          if(value > 100) {
-              value = 100;
-          }
-          progressBar.innerHTML = value + "%";
-          progressBar.style.width = value + "%";
-          value++;
-      },100)
-  </script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
+<script>
+
+        //TOOLTIP
+        $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip();
+  
+        })
+        //POPOVER
+        $(document).ready(function(){
+          $('[data-toggle="popover"]').popover();
+  
+        })
+      
+        
+        //progress
+      //   let progressBar = document.querySelector(".progress-bar");
+      //   progressBar.innerHTML = "0%";
+      //   progressBar.style.width = "0%";
+  
+      //   let value = 0;
+  
+      //   setInterval(() => {
+      //       if(value > 100) {
+      //           value = 100;
+      //       }
+      //       progressBar.innerHTML = value + "%";
+      //       progressBar.style.width = value + "%";
+      //       value++;
+      //   },100)
+</script>
 </html>
